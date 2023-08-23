@@ -1,0 +1,10 @@
+pip3 install selenium
+pip3 install webdriver-manager
+pip3 install behave
+
+https://ultimateqa.com/dummy-automation-websites/
+
+
+runner
+
+behave features/login.feature
