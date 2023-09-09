@@ -45,7 +45,7 @@ behave features/login.feature
 
 ## Construido con
 * [Python](https://www.python.org/downloads/) - Programming language
-* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/) - Framework E2E utilizado
+* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/) - Library for web test automation.
 * [Behave](https://behave.readthedocs.io/en/latest/) - Framework para escribir los escenarios de prueba en lenguaje GHERKIN
 
 
