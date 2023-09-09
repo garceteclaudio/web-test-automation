@@ -8,3 +8,112 @@ https://ultimateqa.com/dummy-automation-websites/
 runner
 
 behave features/login.feature
+pip3 --version
+python3 --version 
+
+Caso de prueba:
+un escenario de prueba que mide la funcionalidad en un conjunto de acciones 
+o condiciones para verificar el resultado esperado.
+
+Test Case Type | Description                                | Test Step                 | Expected Result                                       | Status       |
+
+Functionality  | Area should accomodate up to 20 characters | Input up to 20 characters | All 20 characters in the request should be appropiate | Pass or Fail |
+
+Pruebas de aceptación: son pruebas que se realizan para verificar que el sistema cumple con los requisitos especificados por el usuario o cliente.
+Pruebas de integración: son pruebas que se realizan para verificar la integración entre diferentes módulos o componentes del sistema.
+Pruebas de regresión: son pruebas que se realizan para verificar que el sistema sigue funcionando correctamente después de realizar cambios o modificaciones.
+Pruebas de carga: son pruebas que se realizan para verificar el rendimiento del sistema bajo diferentes niveles de carga o uso.
+Pruebas de seguridad: son pruebas que se realizan para verificar la seguridad del sistema y protegerlo contra posibles ataques o vulnerabilidades.
+
+Casos de prueba
+
+Los casos de prueba tienen algunas partes integrales que siempre deben estar presentes en los campos. 
+Sin embargo, cada caso de prueba se puede dividir en 8 pasos básicos.
+
+Paso 1: ID de caso de prueba
+Todos los casos de prueba deben llevar ID únicos para representarlos. En la mayoría de los casos, seguir una convención para este ID de nomenclatura ayuda con la organización, la claridad y la comprensión.
+
+Paso 2: Descripción de la prueba
+Esta descripción debe detallar qué unidad, característica o función se está probando o qué se está verificando.
+
+Paso 3: Supuestos y condiciones previas
+Esto implica que se cumplan las condiciones antes de la ejecución del caso de prueba. Un ejemplo sería requerir una cuenta de Outlook válida para iniciar sesión.
+
+Paso 4: Datos de prueba
+Esto se relaciona con las variables y sus valores en el caso de prueba. En el ejemplo de un inicio de sesión por correo electrónico, sería el nombre de usuario y la contraseña de la cuenta.
+
+Paso 5: Pasos a ejecutar
+Estos deben ser pasos fácilmente repetibles ejecutados desde la perspectiva del usuario final. Por ejemplo, un caso de prueba para iniciar sesión en un servidor de correo electrónico podría incluir estos pasos:
+Abra la página web del servidor de correo electrónico.
+Introduzca su nombre de usuario.
+Introducir la contraseña.
+Haga clic en el botón "Entrar" o "Iniciar sesión".
+
+Paso 6: Resultado Esperado
+Esto indica el resultado esperado después de la ejecución del paso del caso de prueba. Al ingresar la información de inicio de sesión correcta, el resultado esperado sería un inicio de sesión exitoso.
+
+Paso 7: Resultado real y condiciones posteriores
+En comparación con el resultado esperado, podemos determinar el estado del caso de prueba. En el caso del inicio de sesión por correo electrónico, el usuario iniciará sesión correctamente o no. La condición posterior es lo que sucede como resultado de la ejecución del paso, como ser redirigido a la bandeja de entrada del correo electrónico.
+
+Paso 8: Contraseña errónea
+La determinación del estado de aprobado / reprobado depende de cómo se comparan entre sí el resultado esperado y el resultado real.
+Mismo resultado = Aprobado
+Diferentes resultados = Falla
+
+        Prioridad,
+
+Urgencia de rosolucion, respecto a, defecto, mejora o tarea.
+
+        Severidad,
+
+Tiene q ver el impacto q ns piden o sugerimos en relacion al resto del sistema
+
+
+                                        Verificacion y validacion. 2 procesos de control.
+
+La verificacion tiene lugar en cada paso enn el ciclo de vida , mientras que la validacion
+ocurre despues de que se instala el sistema y antes de ponerlo en servicio.
+
+Verificacion, controla que el sistema se este construyendo de acuerdo a la especificacion inicial.
+Responde a la pregunta, estamos construyendo el software correctamente ? En testing, se hace la mayor parte del tiempo
+
+
+Validacion, controla si el producto satisface los requirimientos. Responnde a la pregunta
+estamos construyendo el prodducto correcto ? es lo que el usuario necesita ?
+
+
+Durante la verificacion se confirma que lo descrito en el requerimiennto se 
+implemennto correctamente en el sistema.
+Falla en laa verificacion de pruebas funcionales > laa pagina no deberia permitir ingresar mail invalido segunn la historia de usuario
+La validacion confirma que lo que solicito el cliente fue lo q se construyo.
+
+
+Se incluyen enn cada una de las fases del SDLC(requirements, design, implementation, testing & verification, release & maintenaance)
+Verificacion
+revisar q los artefactos q se construyen dentro del proceso de desarrollo de sw siguen ciertos lineamientos.
+Estoy desarrollando el producto SW de manera correcta ?
+
+Validacionn
+Permite corrobar q el producto SW se haya desarrollado acorde a las expectativas del cliente.
+Estoy desarrollando el producto SW correcto ?
+
+
+python request
+seleninum python
+mobile python appium
+
+smoke vs sanity-- profunndizatr
+
+
+
+
+<tr> 
+  <div>
+    <th>hora SANTIAGO..</th>
+    <a href="">
+ </div>
+</tr>
+                                 ]Subir   
+//*[*[contains(@text,'SANTIAGO ')]]/a
+
+//*[*[contains(text(), "SANTIAGO")]]/a
