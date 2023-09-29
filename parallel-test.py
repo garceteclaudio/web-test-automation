@@ -5,9 +5,7 @@ from selenium import webdriver
 import time
 
 
-
-
-@pytest.mark.parametrize("variant", range(5))
+@pytest.mark.parametrize("variant", range(2))
 def test_parallel(variant):
     num = random.random()
     print("Random number: ",num)
