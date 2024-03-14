@@ -20,7 +20,12 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 
 ```
-npm install
+brew install allure
+
+pip3 install selenium
+pip3 install webdriver-manager
+pip3 install behave
+pip3 install allure-behave
 ```
 
 
@@ -34,13 +39,19 @@ Las pruebas son ejecutadas localmente.
 
 ```
 behave features/login.feature
+
+behave -f allure_behave.formatter:AllureFormatter -o reports/ features
 ```
 
 ### Reporte de pruebas
 
-- Ubicarse en el archivo reports/html/index.html
+- Ubicarse en la raiz del proyecto y ejecutar:
 
-![Screenshot](reports.png)
+```
+allure serve reports/
+```
+
+![Screenshot](reporte.png)
 
 
 ## Construido con
