@@ -1,0 +1,18 @@
+# Archivos generados automáticamente
+*.log
+*.txt
+*.zip
+.idea
+reports/
+
+# Directorios de dependencias
+/node_modules
+/bower_components
+
+# Archivos de compilación
+/dist
+/out
+
+# Archivos de configuración sensibles
+/config.js
+/secret.key
