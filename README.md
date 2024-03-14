@@ -1,6 +1,6 @@
 # Challenge QA
 
-Este es un proyecto de pruebas automatizadas de la pagina web https://www.saucedemo.com/, los cuales se encuantran desarrollados por Claudio Rodolfo Garcete, principalmente con WebdriverIO y Cucumber. Los test se ejecutan de forma local.
+Este es un proyecto de pruebas automatizadas de la pagina web https://www.saucedemo.com/, los cuales se encuantran desarrollados por Claudio Rodolfo Garcete, principalmente con python, selenium, behave y allure. Los test se ejecutan de forma local.
 
 ## Comenzando
 
@@ -9,8 +9,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 ### Pre-requisitos
 
 
-- Es necesario tener instalado [node](https://www.python.org/downloads/) para instalar y ejecutar el proyecto.
-- 
+- Es necesario tener instalado [python 3.x](https://www.python.org/downloads/) para instalar y ejecutar el proyecto.
 
 ### Instalacion
 
