@@ -33,19 +33,15 @@ Las pruebas son ejecutadas localmente.
 - Ejecutar el siguiente script:
 
 ```
-behave 
-
-behave features/login.feature
-
-behave -f allure_behave.formatter:AllureFormatter -o reports/ features
+behavex --parallel-processes 3
 ```
 
 ### Reporte de pruebas
 
-- Ubicarse en la raiz del proyecto y ejecutar:
+- Ubicarse en la raiz del proyecto, entrar a la carpeta output y abrir el archivo:
 
 ```
-allure serve reports/
+report.html
 ```
 
 ![Screenshot](reporte.png)

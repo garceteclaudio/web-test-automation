@@ -1,8 +1,9 @@
 @login
 Feature: Login
+    As an user i want to login to the app
 
     @login1
-    Scenario: Login to the page
+    Scenario: Login to the page 1
         Given Launch chrome browser
         When I type my user "standard_user"
         And my password
@@ -16,3 +17,8 @@ Feature: Login
         And my password
         And click login button
         Then I enter to the app
+
+    @login3
+    Scenario: Login to the page 3
+        Given Launch chrome browser
+        When I type my user "standard_user"
