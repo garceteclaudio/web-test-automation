@@ -1,3 +1,8 @@
+
+Install allure:
+
+npm install --save-dev allure-commandline
+
 pip3 install selenium
 pip3 install webdriver-manager
 pip3 install behave

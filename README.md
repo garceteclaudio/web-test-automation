@@ -8,8 +8,9 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 ### Pre-requisitos
 
-
-- Es necesario tener instalado [python 3.x](https://www.python.org/downloads/) para instalar y ejecutar el proyecto.
+- Es necesario instalar [node.js](https://nodejs.org/en)
+- Instalar de forma global [allure-reports](https://www.npmjs.com/package/allure-commandline) : npm install -g allure-commandline --save-dev
+- Es necesario tener instalado [python 3.12](https://www.python.org/downloads/) para instalar y ejecutar el proyecto.
 
 ### Instalacion
 
@@ -19,12 +20,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 
 ```
-brew install allure
-
-pip3 install selenium
-pip3 install webdriver-manager
-pip3 install behave
-pip3 install allure-behave
+pip install -r requirements.txt
 ```
 
 

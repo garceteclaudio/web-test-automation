@@ -1,6 +1,5 @@
 # Archivos generados automáticamente
 *.log
-*.txt
 *.zip
 .idea
 reports/
