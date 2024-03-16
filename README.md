@@ -33,6 +33,8 @@ Las pruebas son ejecutadas localmente.
 - Ejecutar el siguiente script:
 
 ```
+behave 
+
 behave features/login.feature
 
 behave -f allure_behave.formatter:AllureFormatter -o reports/ features
