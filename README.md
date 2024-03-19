@@ -20,6 +20,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 
 ```
+pip install git+https://github.com/allure-framework/allure-python.git
 pip install -r requirements.txt
 ```
 
