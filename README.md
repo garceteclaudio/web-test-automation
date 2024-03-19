@@ -41,7 +41,9 @@ behavex --parallel-processes 3
 - Ubicarse en la raiz del proyecto, entrar a la carpeta output y abrir el archivo:
 
 ```
-report.html
+output/report.html
+allure serve
+
 ```
 
 ![Screenshot](reporte.png)
