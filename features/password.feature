@@ -1,4 +1,4 @@
-@password
+@password @all
 Feature: Password
     As an user i want to test my password
 

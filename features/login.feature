@@ -1,4 +1,4 @@
-@login
+@login @all
 Feature: Login
     As an user i want to login to the app
 
