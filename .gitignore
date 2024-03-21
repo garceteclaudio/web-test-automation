@@ -4,6 +4,7 @@
 .idea
 reports/
 output/
+allure-results/
 
 # Directorios de dependencias
 /node_modules
