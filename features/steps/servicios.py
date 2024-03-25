@@ -5,11 +5,11 @@ import requests
 url = ""
 response = None
 
-@given('un endpoint publico "https://api.sampleapis.com/futurama/info"')
-def step_impl(context):
+@given('un endpoint publico "{endopoint}"')
+def step_impl(context,endopoint):
     print("Ejecutando servicio........")
     global url
-    url = "https://api.sampleapis.com/futurama/info"
+    url = endopoint
 
 @when('el usuario realiza un get')
 def step_impl(context):

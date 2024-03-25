@@ -34,7 +34,8 @@ Las pruebas son ejecutadas localmente.
 - Ejecutar el siguiente script:
 
 ```
-behavex --parallel-processes 4 --tags=@servicios
+behavex --parallel-processes 1 --tags=@servicios
+behavex --parallel-processes 5 --tags=@servicios
 behavex --parallel-processes 2 --tags=@login
 ```
 
