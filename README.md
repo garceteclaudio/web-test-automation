@@ -35,7 +35,7 @@ Las pruebas son ejecutadas localmente.
 
 ```
 behavex --parallel-processes 4 --tags=@servicios
-behavex --parallel-processes 2 --tags=@login
+behavex --parallel-processes 4 --tags=@login
 ```
 
 ### Reporte de pruebas
