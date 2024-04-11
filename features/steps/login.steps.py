@@ -8,10 +8,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 @given(u'Launch chrome browser')
 def step_impl(context):
-    print("Holaaa")
-    context.driver = webdriver.Chrome()
-    # implicit wait
-    context.driver.implicitly_wait(5)
     context.driver.get('https://www.saucedemo.com/')
     
 
@@ -37,8 +33,8 @@ def step_impl(context):
     login_button.click()
 
 
+
 @then(u'I enter to the app')
 def step_impl(context):
     time.sleep(2)
-    context.driver.quit()
     
