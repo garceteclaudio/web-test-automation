@@ -1,0 +1,19 @@
+@login
+Feature: Login # features/login.feature:2
+
+  @login1
+  Scenario: Login to the page           # features/login.feature:5
+    Given Launch chrome browser         # features/steps/login.steps.py:12
+    When I type my user "standard_user" # features/steps/login.steps.py:23
+    And my password                     # features/steps/login.steps.py:31
+    And click login button              # features/steps/login.steps.py:37
+    Then I enter to the app             # features/steps/login.steps.py:43
+
+  @login2
+  Scenario: Login to the page 2         # features/login.feature:13
+    Given Launch chrome browser         # None
+    When I type my user "standard_user" # None
+    And my password                     # None
+    And click login button              # None
+    Then I enter to the app             # None
+
