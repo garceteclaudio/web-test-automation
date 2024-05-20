@@ -8,11 +8,24 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.options import Options
 
 @given(u'Launch chrome browser')
 def step_impl(context):
-    print("Holaaa")
-    context.driver = webdriver.Chrome()
+
+
+    # Configurar las opciones de Chrome
+    chrome_options = Options()
+    chrome_options.set_capability('browserName', 'chrome')
+    chrome_options.set_capability('platformName', 'mac')
+    chrome_options.set_capability('gsg:customcap', True)
+    chrome_options.set_capability('se:name', 'test esto!')
+
+    # URL del hub
+    hub_url = 'http://192.168.100.54:4444'
+    # Crear la instancia del navegador remoto
+    context.driver = webdriver.Remote(command_executor=hub_url, options=chrome_options)
     context.driver.implicitly_wait(5)
     context.driver.get('https://www.saucedemo.com/')
 
