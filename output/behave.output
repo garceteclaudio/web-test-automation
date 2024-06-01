@@ -1,0 +1,35 @@
+@login
+Feature: Login # features/login.feature:2
+
+  @login1
+  Scenario: Login to the page           # features/login.feature:5
+    Given Launch chrome browser         # features/steps/login.steps.py:14
+    When I type my user "standard_user" # features/steps/login.steps.py:38
+    And my password                     # features/steps/login.steps.py:46
+    And click login button              # features/steps/login.steps.py:52
+    Then I enter to the app             # features/steps/login.steps.py:58
+
+  @login2
+  Scenario: Login to the page 2         # features/login.feature:13
+    Given Launch chrome browser         # features/steps/login.steps.py:14
+    When I type my user "standard_user" # features/steps/login.steps.py:38
+    And my password                     # features/steps/login.steps.py:46
+    And click login button              # features/steps/login.steps.py:52
+    Then I enter to the app             # features/steps/login.steps.py:58
+
+  @login3
+  Scenario: Login to the page 3         # features/login.feature:21
+    Given Launch chrome browser         # features/steps/login.steps.py:14
+    When I type my user "standard_user" # features/steps/login.steps.py:38
+    And my password                     # features/steps/login.steps.py:46
+    And click login button              # features/steps/login.steps.py:52
+    Then I enter to the app             # features/steps/login.steps.py:58
+
+  @login4
+  Scenario: Login to the page 4         # features/login.feature:29
+    Given Launch chrome browser         # features/steps/login.steps.py:14
+    When I type my user "standard_user" # features/steps/login.steps.py:38
+    And my password                     # features/steps/login.steps.py:46
+    And click login button              # features/steps/login.steps.py:52
+    Then I enter to the app             # features/steps/login.steps.py:58
+

@@ -3,7 +3,7 @@
 *.zip
 .idea
 reports/
-
+output/
 # Directorios de dependencias
 /node_modules
 /bower_components

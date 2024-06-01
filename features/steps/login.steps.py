@@ -25,6 +25,8 @@ def step_impl(context):
     # URL del hub
     hub_url = 'http://192.168.100.54:4444'
     # Crear la instancia del navegador remoto
+
+    # nodos ???
     context.driver = webdriver.Remote(command_executor=hub_url, options=chrome_options)
     context.driver.implicitly_wait(5)
     context.driver.get('https://www.saucedemo.com/')
