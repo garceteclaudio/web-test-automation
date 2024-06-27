@@ -1,0 +1,12 @@
+java -jar selenium-server-4.21.0.jar -role hub --config hubconfig.json
+
+java -jar selenium-server-4.21.0.jar -role node --config nodoConfig.json --port 6161
+java -jar selenium-server-4.21.0.jar node --config nodoConfig2.json --port 6363
+
+
+------------------------------------------------------------------------
+java -jar selenium-server-standalone-3.5.0.jar -role node -hub
+ http://localhost:4444/grid/register maxSession 1, -browser "browserName=chrome, version=38.0, platform=WIN7" -port 8904
+
+
+java -jar selenium-server-standalone-3.5.0.jar -role hub
