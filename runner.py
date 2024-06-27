@@ -9,5 +9,3 @@ behave_command = f"--tags={tags_value} -f allure_behave.formatter:AllureFormatte
 # Execute Behave using the imported main function
 behavemain(behave_command.split())
 
-
-

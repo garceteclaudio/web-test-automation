@@ -22,13 +22,15 @@ def selenium_alone():
     return driver
 
 def run_test(instance_name, browser_name):
-    driver = selenium_alone()
+    driver = seleniumGrid()
     try:
         # Abrir una página web
         driver.get('https://selenium.dev')
 
         # Realizar alguna acción (por ejemplo, obtener el título de la página)
         print(f"{instance_name} ({browser_name}) - Page title is: {driver.title}")
+
+        time.sleep(2)
 
     finally:
         # Cerrar el navegador
@@ -44,7 +46,7 @@ def main():
         ('Test 5', 'chrome'),
         ('Test 6', 'chrome'),
         ('Test 7', 'chrome'),
-        ('Test 8', 'chrome'),
+        ('Test 544', 'chrome'),
     ]
 
     # Ejecutar las pruebas en paralelo usando ThreadPoolExecutor
