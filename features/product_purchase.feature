@@ -1,5 +1,5 @@
 
-@purchase
+@purchase @all
 Feature: Product purchase functionality
 
   @purchase1

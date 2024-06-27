@@ -1,5 +1,5 @@
 
-@login
+@login @all
 Feature: Login functionality
 
   @login1
