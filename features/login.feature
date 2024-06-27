@@ -1,18 +1,11 @@
+
 @login
-Feature: Login
+Feature: Login functionality
 
-    @login1
-    Scenario: Login to the page
-        Given Launch chrome browser
-        When I type my user "standard_user"
-        And my password
-        And click login button
-        Then I enter to the app
-
-    @login2
-    Scenario: Login to the page 2
-        Given Launch chrome browser
-        When I type my user "standard_user"
-        And my password
-        And click login button
-        Then I enter to the app
+  @login1
+  Scenario: Successful login
+    Given the user is on the login page
+    When the user enters a valid username
+    And the user enters a valid password
+    And the user clicks the login button
+    Then shows home page

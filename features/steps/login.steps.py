@@ -1,47 +1,23 @@
-#!/usr/bin/env python3
-from behave import *
-import time
-from selenium import webdriver
+from behave import given, when, then
+from features.pages.LoginPage import LoginPage
 
-from selenium.webdriver.common.keys import Keys
-
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-@given(u'Launch chrome browser')
+@given('the user is on the login page')
 def step_impl(context):
-    print("Holaaa")
-    context.driver = webdriver.Chrome()
-    context.driver.implicitly_wait(5)
+    context.login_page = LoginPage(context.driver)
     context.driver.get('https://www.saucedemo.com/')
 
 
-
-
-
-@when(u'I type my user "{user}"')
-def step_impl(context, user):
-    # Wait explicito
-    wait = WebDriverWait(context.driver, timeout=15)
-    element = wait.until(EC.visibility_of_element_located((By.ID, "user-name")))
-    element.send_keys(user)
-
-
-@when(u'my password')
+@when('the user enters a valid username')
 def step_impl(context):
-    elemPassword = context.driver.find_element(By.ID, 'password')  # Find the search box
-    elemPassword.send_keys('secret_sauce')
+    context.login_page.enter_username('standard_user')
 
-
-@when(u'click login button')
+@when('the user enters a valid password')
 def step_impl(context):
-    login_button = context.driver.find_element(By.ID, 'login-button')  # Find the search box
-    login_button.click()
+    context.login_page.enter_password('secret_sauce')
 
-
-@then(u'I enter to the app')
+@when('the user clicks the login button')
 def step_impl(context):
-    time.sleep(2)
-    context.driver.quit()
-    
+    context.login_page.click_login()
+
+
+
