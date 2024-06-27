@@ -3,7 +3,7 @@
 *.zip
 .idea
 reports/
-
+output/
 # Directorios de dependencias
 /node_modules
 /bower_components
@@ -15,3 +15,6 @@ reports/
 # Archivos de configuración sensibles
 /config.js
 /secret.key
+
+.DS_Store
+__pycache__/
